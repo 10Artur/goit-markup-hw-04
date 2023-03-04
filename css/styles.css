@@ -183,6 +183,10 @@ body {
     padding-top: 188px;
     padding-bottom: 188px;
     text-align: center;
+    background-image: radial-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bgimg_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-color: var(--main-color);
 }
 
@@ -215,8 +219,8 @@ body {
 }
 
 
-/*
-----------About section---------- */
+/* ----------About section----------
+*/
 
 .about-list {
     display: flex;
@@ -228,6 +232,16 @@ body {
 
 .about-item:not(:last-child) {
     margin-right: 24px;
+}
+
+.about-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 112px;
+    background: var(--accent-color);
+    border-radius: 4px;
 }
 
 .about-subtitle {
@@ -277,8 +291,8 @@ body {
 }
 
 .team-content {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 32px 16px;
+    /* padding-bottom: 32px; */
     text-align: center;
     background: var(--secondary-text-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -291,16 +305,86 @@ body {
 
 .team-text {
     color: var(--text-color);
+    margin-bottom: 8px;
+}
+
+.team-content-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.team-content-item {
+    width: 40px;
+    height: 40px;
+}
+
+.team-content-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--logo-btn-color);
+}
+
+.team-content-link:hover {
+    background-color: var(--hover-color);
 }
 
 
-/*
-----------Footer----------- */
+/* ----------Companies section---------- */
+
+.companies {
+    padding-top: 130px;
+}
+
+.companies-list {
+    display: flex;
+}
+
+.companies-item {
+    width: 168px;
+    height: 88px;
+}
+
+.companies-item:not(:last-child) {
+    margin-right: 24px;
+}
+
+.companies-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #8E8F99;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+}
+
+.companies-link:is(:hover, :focus) {
+    color: var(--hover-color);
+    border-color: var(--hover-color);
+}
+
+.companies-icon {
+    fill: currentColor;
+}
+
+
+/* ----------Footer----------- */
 
 .footer {
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: var(--main-color);
+}
+
+.footer .container {
+    display: flex;
+    gap: 120px;
 }
 
 .footer-text {
@@ -312,6 +396,40 @@ body {
     display: inline-block;
     color: var(--accent-color);
     margin-bottom: 16px;
+}
+
+.footer-subtitle {
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.footer-list {
+    display: flex;
+}
+
+.footer-item {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-item:not(:last-child) {
+    margin-right: 16px;
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    background-color: rgb(49, 208, 170);
 }
 
 
@@ -373,6 +491,12 @@ body {
 .cards-content {
     padding: 32px 16px;
     border: 1px solid var(--border-btn-color);
+    border-top: none;
+}
+
+.cards-content:hover {
+    border: 1px solid var(--accent-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-top: none;
 }
 
